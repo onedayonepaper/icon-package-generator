@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import Dropzone from './components/Dropzone';
 import Progress from './components/Progress';
-import { ManifestSettingsComponent, type ManifestSettings } from './components/ManifestSettings';
+import ManifestSettingsForm from './components/ManifestSettingsForm';
+import { type ManifestSettings } from './components/ManifestSettings';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import { useTranslation } from '@/src/i18n';
 
@@ -41,7 +42,7 @@ export default function Home() {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             {t('manifestSettings')}
           </h2>
-          <ManifestSettingsComponent
+          <ManifestSettingsForm
             onSettingsChange={setSettings}
             initialSettings={settings}
           />
