@@ -10,6 +10,7 @@ export default function LanguageSwitcher() {
     const newLang = currentLanguage === 'en' ? 'ko' : 'en';
     setLanguage(newLang);
   };
+  
 
   return (
     <button
